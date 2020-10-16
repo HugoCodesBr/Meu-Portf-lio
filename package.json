@@ -9,5 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoCodesBr/Meu-Portf-lio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HugoCodesBr/Meu-Portf-lio/issues"
+  },
+  "homepage": "https://github.com/HugoCodesBr/Meu-Portf-lio#readme",
   "description": ""
 }

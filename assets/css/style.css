@@ -1,17 +1,29 @@
 body {
-  background: linear-gradient(to top right, #3c6cb5, #008fd2, #00b0dd, #00cfd7, #12ebc5); }
+  background: linear-gradient(to top right, #3c6cb5, #008fd2, #00b0dd, #00cfd7, #12ebc5);
+}
+
+.logo {
+  max-width: 350px;
+  height: auto;
+  max-width: 350px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html, body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
