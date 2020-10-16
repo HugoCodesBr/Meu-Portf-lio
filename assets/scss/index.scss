@@ -10,5 +10,18 @@ body{
   max-width: 350px;
   display: flex;
   margin: 0 auto;
-  margin-top: 20px;
+  padding-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in both;
 } 
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
