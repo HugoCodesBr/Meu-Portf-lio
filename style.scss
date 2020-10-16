@@ -1,0 +1,15 @@
+@import './assets/scss/config';
+@import './assets/scss/index.scss';
+
+// Padrões
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  @include nunito-paragraf;
+  width: 100%;
+  height: 100%;
+}

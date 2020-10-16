@@ -1,0 +1,45 @@
+// Variáveis
+$title: 2.4rem;
+$subtitle-1: 1.6rem;
+$subtitle-2: 1.2rem;
+$paragraf: 1rem;
+
+$title-mobile: 2rem;
+$subtitle-1-mobile: 1.6rem;
+$subtitle-2-mobile: 1.1rem;
+$paragraf-mobile: 1rem;
+
+// Cores
+$degrade-principal: linear-gradient(to top right, #3c6cb5, #008fd2, #00b0dd, #00cfd7, #12ebc5);
+$branco-fantasma: #f8f8ff;
+
+// Media Queries
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$table: 780px;
+$desktop: 1024px;
+
+// Mixins de Fontes
+@mixin nunito-title{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $title;
+}
+
+@mixin nunito-subtitle{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $subtitle-1;
+}
+
+@mixin nunito-paragraf{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $paragraf;
+}
+
+
