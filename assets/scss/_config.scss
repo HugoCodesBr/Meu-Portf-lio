@@ -10,6 +10,7 @@ $subtitle-2-mobile: 1.1rem;
 $paragraf-mobile: 1rem;
 
 // Cores
+$cor-texto-destaque: #008fd2;
 $degrade-principal: linear-gradient(to top right, #3c6cb5, #008fd2, #00b0dd, #00cfd7, #12ebc5);
 $branco-fantasma: #f8f8ff;
 
@@ -42,4 +43,30 @@ $desktop: 1024px;
   font-size: $paragraf;
 }
 
+@mixin nunito-title-mob{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $title-mobile;
+}
+
+@mixin nunito-subtitle-mob{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $subtitle-1-mobile;
+}
+
+@mixin nunito-paragraf-mob{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $paragraf-mobile;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 

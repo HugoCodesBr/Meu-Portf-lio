@@ -12,7 +12,7 @@ body{
   margin: 0 auto;
   padding-top: 20px;
   opacity: 0;
-  animation: fadeIn 1s ease-in both;
+  animation: fadeIn 1.5s ease-in both;
 } 
 
 @keyframes fadeIn {
@@ -24,4 +24,203 @@ body{
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 380px;
+  display: flex;
+  li{
+    list-style: none;
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+    background-color: $branco-fantasma;
+    display: inline;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $cor-texto-destaque;
+  }
+  li:hover{
+    color: $branco-fantasma;
+    background-color: #12ebc5;
+  }
+}
+
+// Boas Vindas
+.container{
+  .boas-vindas img{
+    display: flex;
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .boas-vindas {
+    h1 {
+      @include nunito-title-mob;
+      color: $branco-fantasma;
+      text-align: center;
+    }
+    h2 {
+      @include nunito-paragraf-mob;
+      color: $branco-fantasma;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+// sobre mim
+.sobre-mim {
+  div {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 390px;
+    width: 90%;
+    background-color: $branco-fantasma;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    h2 {
+      @include nunito-subtitle-mob;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+    .habilidades{
+      text-decoration: none;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 10px;
+      li {
+        display: flex;
+        list-style: none;
+        margin: 0 auto;
+        padding: 10px;
+        margin-bottom: 10px;
+        img {
+          max-height: 50px;
+        }
+
+        #sass-imagem{
+          width: 50px;
+          height: 25px;
+          margin-top: 10px;
+        }
+
+      }
+    }
+  }
+  p {
+    @include nunito-paragraf-mob;
+    color: #292929;
+    margin-top: 20px;
+  }
+}
+
+.download {
+  @include nunito-paragraf-mob;
+  border:1px solid #fece2f;
+  border-width: 2px     ;
+  text-decoration: none;
+  color: #fece2f;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.download:hover {
+  color: $branco-fantasma;
+  background-color: #fece2f;
+}
+
+// Portfolio
+
+.portfolio {
+  div {
+    height: 400px;
+    text-align: center;
+    margin-top: 40px          ;
+  }
+  h2 {
+    @include nunito-subtitle-mob;
+    color: $branco-fantasma;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+
+    
+}
+
+// imagens, sites
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+.textOverImage{
+    position:relative;
+    width:300px;
+    height:200px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-position:center;
+    transition:0.5s;
+    overflow:hidden;
+    border-radius:4px;
+    box-shadow:0 0 4px #000;
+  }
+  
+  .textOverImage:hover{
+    background-size:110%;
+  }
+  
+.textOverImage:before{
+  position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
+    background-color:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-title);
+    transition:0.5s 0.1s;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+  .textOverImage:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    color:#fff;
+    padding:8px;
+    content:attr(data-text);
+    transition:0.5s;
+    padding-top:2em;
+    margin-top:8px;
+    transform:translateY(100%);
+    opacity:0;
+  }
+  
+  .textOverImage:hover:after{
+    transform:translateY(0);
+    transition:0.5s 0.1s;
+    opacity:1;
+  }
+.textOverImage:hover:before{
+    transform:translateY(0);
+    padding:8px;
+    background-color:rgba(0,0,0,0.6);
+    transition:0.5s;
 }
