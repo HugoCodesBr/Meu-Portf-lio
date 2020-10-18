@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="./assets/js/script.js"></script>
   <!-- Fonts Google -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
@@ -41,17 +42,40 @@
         <li><img src="./assets/img/sass.png" alt="Sass" id="sass-imagem"></li>
         <li><img src="./assets/img/js.png" alt="Javascript" id="javascript-imagem"></li>
       </ul>
-      <a href="" class="download">Veja meu curriculo completo</a>
+      <a class="cursos tooltip">Veja os meus cursos
+        <span class="tooltiptext">
+          <ul>
+            <li>ADS - Cursando</li>
+            <li>Web design completo e UI/UI design - Origamid</li>
+            <li>Informática – módulo 2 (avançado)</li>
+            <li>WordPress como CMS - Origamid</li>
+          </ul>
+        </span>
+      </a>
+      
     </div>
   </section>
 
   <section class="container portfolio">
     <div>
       <h2>Portfólio</h2>
-      <a href="http://codepen.io/zFunx/pen/GmMGax" class="textOverImage" style="background-image:url(./assets/img/site1.jpg)" data-title="Site Um" data-text="Ir para o repositório">
+      <div><a href="#"><img src="./assets/img/site1.jpg" alt=""></a><a href="#" id="catalogo" class="catalogo"><p>ver repositório</p></a></div>
+      <div><a href="#"><img src="./assets/img/site2.jpg" alt=""></a><a href="#" id="catalogo" class="catalogo"><p>ver repositório</p></a></div>
+      <div><a href="#"><img src="./assets/img/site3.jpg" alt=""></a><a href="#" id="catalogo" class="catalogo"><p>ver repositório</p></a></div>
+      
     </a>
     </div>
   </section>
+
+  <footer>
+    <div class="rodape-box">
+      <p>Herbty Hugo © 2020. Alguns direitos reservados.</p>
+      <div class="contato"><ul>
+        <li>Whatsapp: (85) 99192-5974</li>
+        <li><a href="#">Email: herbtyh@gmail.com</a></li>
+      </ul></div>
+    </div>
+  </footer>
 
 </body>
 </html>

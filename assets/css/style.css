@@ -113,7 +113,7 @@ body {
   color: #292929;
   margin-top: 20px; }
 
-.download {
+.cursos {
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -125,14 +125,48 @@ body {
   font-weight: bold;
   padding: 5px; }
 
-.download:hover {
+.cursos:hover {
   color: #f8f8ff;
   background-color: #fece2f; }
 
-.portfolio div {
-  height: 400px;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: black;
+  color: #fff;
   text-align: center;
-  margin-top: 40px; }
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -180px; }
+  .tooltip .tooltiptext li {
+    list-style: none; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
+
+.portfolio div {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px; }
 .portfolio h2 {
   font-family: 'Nunito', sans-serif;
   font-style: normal;
@@ -141,72 +175,54 @@ body {
   color: #f8f8ff;
   text-transform: uppercase;
   font-weight: bold; }
-
-a {
-  text-decoration: none; }
-
-/*Add the following compatibility code for IE as you can't animate background-size in IE*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .textOverImage {
-    background-size: cover !important; } }
-.textOverImage {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  float: left;
-  margin: 4px;
-  background-size: 100%;
-  background-position: center;
-  transition: 0.5s;
-  overflow: hidden;
-  border-radius: 4px;
-  box-shadow: 0 0 4px #000; }
-
-.textOverImage:hover {
-  background-size: 110%; }
-
-.textOverImage:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform: translateY(90%);
-  /*use transform:translateY(100%); to remove footer*/
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  padding: 0 8px;
-  content: attr(data-title);
-  transition: 0.5s 0.1s;
-  color: #fff;
+.portfolio .catalogo {
+  margin: 0 auto; }
+.portfolio img {
+  max-width: 300px;
+  height: 200px; }
+.portfolio .catalogo {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  height: 40px;
+  background-color: #fece2f;
+  text-decoration: none;
+  color: #f8f8ff;
   font-weight: bold;
-  font-size: 1.5em; }
+  text-transform: uppercase;
+  padding-top: 10px; }
 
-.textOverImage:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  padding: 8px;
-  content: attr(data-text);
-  transition: 0.5s;
-  padding-top: 2em;
-  margin-top: 8px;
-  transform: translateY(100%);
-  opacity: 0; }
-
-.textOverImage:hover:after {
-  transform: translateY(0);
-  transition: 0.5s 0.1s;
-  opacity: 1; }
-
-.textOverImage:hover:before {
-  transform: translateY(0);
-  padding: 8px;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: 0.5s; }
+footer {
+  background-color: #292929;
+  color: #f8f8ff;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  footer .contato {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    border: solid;
+    border-color: #fece2f;
+    border-width: 2px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold; }
+    footer .contato a {
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #f8f8ff; }
+    footer .contato li {
+      list-style: none; }
 
 * {
   margin: 0;

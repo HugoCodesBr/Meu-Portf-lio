@@ -122,7 +122,7 @@ body{
   }
 }
 
-.download {
+.cursos {
   @include nunito-paragraf-mob;
   border:1px solid #fece2f;
   border-width: 2px     ;
@@ -132,95 +132,116 @@ body{
   padding: 5px;
 }
 
-.download:hover {
+.cursos:hover {
   color: $branco-fantasma;
   background-color: #fece2f;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -180px;
+  li {
+    list-style: none;
+  }
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
 }
 
 // Portfolio
 
 .portfolio {
-  div {
-    height: 400px;
+  div{
     text-align: center;
-    margin-top: 40px          ;
+    margin: 0 auto;
+    margin-top: 20px;
   }
+  
   h2 {
     @include nunito-subtitle-mob;
     color: $branco-fantasma;
     text-transform: uppercase;
     font-weight: bold;
   }
-  
-
-    
-}
-
-// imagens, sites
-a{text-decoration:none;}
-/*Add the following compatibility code for IE as you can't animate background-size in IE*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
-	.textOverImage{background-size:cover!important;}
-}
-.textOverImage{
-    position:relative;
-    width:300px;
-    height:200px;
-    float:left;
-    margin:4px;
-    background-size:100%;
-    background-position:center;
-    transition:0.5s;
-    overflow:hidden;
-    border-radius:4px;
-    box-shadow:0 0 4px #000;
+  .catalogo {
+    margin:   0 auto;
   }
-  
-  .textOverImage:hover{
-    background-size:110%;
+  img {
+    max-width: 300px;
+    height: 200px;
   }
-  
-.textOverImage:before{
-  position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-  transform:translateY(90%);/*use transform:translateY(100%); to remove footer*/
-    background-color:rgba(0,0,0,0.3);
-    color:#fff;
-    padding:0 8px;
-    content:attr(data-title);
-    transition:0.5s 0.1s;
-    color:#fff;
-    font-weight:bold;
-    font-size:1.5em;
+
+  .catalogo {
+    @include nunito-paragraf-mob;
+    display: block;
+    height: 40px;
+    background-color: #fece2f;
+    text-decoration: none;
+    color: $branco-fantasma;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+
 }
 
-  .textOverImage:after{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    color:#fff;
-    padding:8px;
-    content:attr(data-text);
-    transition:0.5s;
-    padding-top:2em;
-    margin-top:8px;
-    transform:translateY(100%);
-    opacity:0;
+// rodapé
+
+footer{
+  background-color: #292929;
+  color: $branco-fantasma;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .contato {
+    @include nunito-paragraf-mob;
+    border: solid;
+    border-color: #fece2f;
+    border-width: 2px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    a {
+      @include nunito-paragraf-mob;
+      text-decoration: none;
+      color: $branco-fantasma;
+    }
+    li {
+      list-style: none;
+    }
   }
-  
-  .textOverImage:hover:after{
-    transform:translateY(0);
-    transition:0.5s 0.1s;
-    opacity:1;
-  }
-.textOverImage:hover:before{
-    transform:translateY(0);
-    padding:8px;
-    background-color:rgba(0,0,0,0.6);
-    transition:0.5s;
 }
+
