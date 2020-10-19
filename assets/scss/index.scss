@@ -205,7 +205,7 @@ body{
   }
   img {
     max-width: 300px;
-    height: 300px;
+    
   }
 
   .catalogo {
@@ -218,6 +218,19 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 10px;
+    margin-top: 10px;
+  }
+  .repo {
+    @include nunito-paragraf-mob;
+    display: block;
+    height: 40px;
+    background-color: $branco-fantasma;
+    text-decoration: none;
+    color: #fece2f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-top: 10px;
   }
 
 }

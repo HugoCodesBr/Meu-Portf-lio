@@ -1,13 +1,15 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./surfbot/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch style.scss:./assets/css/style.css"
+    "sass": "sass --watch style.scss:./assets/css/style.css",
+    "start": "nodemon ./surfbot/index.sj"
   },
   "keywords": [],
-  "author": "",
+  "author": "HugoCodesBr <herbtyh@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -17,5 +19,10 @@
     "url": "https://github.com/HugoCodesBr/Meu-Portf-lio/issues"
   },
   "homepage": "https://github.com/HugoCodesBr/Meu-Portf-lio#readme",
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {},
   "description": ""
 }
