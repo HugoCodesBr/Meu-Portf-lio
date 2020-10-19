@@ -10,6 +10,75 @@
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .sobreMim div p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .sobreMim div {
+    height: 700px !important;
+  }
+
+  .sobreMim__habilidades li img {
+    max-height: 100px !important;
+    margin-top: 20px !important;
+  }
+
+  .sobreMim__habilidades2 li img {
+    max-height: 100px !important;
+    margin-top: 20px !important;
+  }
+
+  .sobreMim__habilidades2 li {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #sass-imagem {
+    width: 100px !important;
+    height: 50px !important;
+    margin-top: 25px !important;
+  }
+
+  .cursos {
+    margin-left: -20px !important;
+    margin-top: 20px !important;
+  }
+
+  .portfolio div {
+    display: inline-block;
+    float: top;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .portfolio div img {
+    max-height: 200px !important;
+    max-width: 500px !important;
+  }
+}
 body {
   background: linear-gradient(to top right, #3c6cb5, #008fd2, #00b0dd, #00cfd7, #12ebc5);
 }
@@ -58,13 +127,13 @@ body {
   background-color: #12ebc5;
 }
 
-.container .boas-vindas img {
+.container .container__boasVindas img {
   display: flex;
   margin: 0 auto;
   max-width: 300px;
   margin-top: 20px;
 }
-.container .boas-vindas h1 {
+.container .container__boasVindas h1 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -72,7 +141,7 @@ body {
   color: #f8f8ff;
   text-align: center;
 }
-.container .boas-vindas h2 {
+.container .container__boasVindas h2 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -82,7 +151,7 @@ body {
   letter-spacing: 5px;
 }
 
-.sobre-mim div {
+.sobreMim div {
   display: block;
   text-align: center;
   padding: 15px;
@@ -95,7 +164,7 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.sobre-mim div h2 {
+.sobreMim div h2 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -103,49 +172,49 @@ body {
   text-transform: uppercase;
   margin-top: 20px;
 }
-.sobre-mim div .habilidades {
+.sobreMim div .sobreMim__habilidades {
   text-decoration: none;
   display: flex;
   margin: 0 auto;
   margin-top: 10px;
 }
-.sobre-mim div .habilidades li {
+.sobreMim div .sobreMim__habilidades li {
   display: flex;
   list-style: none;
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 10px;
 }
-.sobre-mim div .habilidades li img {
+.sobreMim div .sobreMim__habilidades li img {
   max-height: 50px;
 }
-.sobre-mim div .habilidades li #sass-imagem {
+.sobreMim div .sobreMim__habilidades li #sass-imagem {
   width: 50px;
   height: 25px;
   margin-top: 10px;
 }
-.sobre-mim div .habilidades2 {
+.sobreMim div .sobreMim__habilidades2 {
   text-decoration: none;
   display: flex;
   margin: 0 auto;
   margin-top: 10px;
 }
-.sobre-mim div .habilidades2 li {
+.sobreMim div .sobreMim__habilidades2 li {
   display: flex;
   list-style: none;
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 10px;
 }
-.sobre-mim div .habilidades2 li img {
+.sobreMim div .sobreMim__habilidades2 li img {
   max-height: 50px;
 }
-.sobre-mim div .habilidades2 li #sass-imagem {
+.sobreMim div .sobreMim__habilidades2 li #sass-imagem {
   width: 50px;
   height: 25px;
   margin-top: 10px;
 }
-.sobre-mim p {
+.sobreMim p {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -178,7 +247,7 @@ body {
   border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.tooltip .cursos__tooltiptext {
   visibility: hidden;
   width: 350px;
   background-color: black;
@@ -192,11 +261,11 @@ body {
   left: 50%;
   margin-left: -180px;
 }
-.tooltip .tooltiptext li {
+.tooltip .cursos__tooltiptext li {
   list-style: none;
 }
 
-.tooltip .tooltiptext::after {
+.tooltip .cursos__tooltiptext::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -207,10 +276,25 @@ body {
   border-color: transparent transparent black transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .cursos__tooltiptext {
   visibility: visible;
 }
 
+.portfolio .portfolio__name {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f8f8ff;
+}
+.portfolio .portfolio__aviso {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #f8f8ff;
+  margin-top: 20px;
+}
 .portfolio div {
   text-align: center;
   margin: 0 auto;
@@ -225,13 +309,13 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-.portfolio .catalogo {
+.portfolio .portfolio__catalogo {
   margin: 0 auto;
 }
 .portfolio img {
   max-width: 300px;
 }
-.portfolio .catalogo {
+.portfolio .portfolio__catalogo {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -246,7 +330,7 @@ body {
   padding-top: 10px;
   margin-top: 10px;
 }
-.portfolio .repo {
+.portfolio .portfolio__repo {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -262,7 +346,7 @@ body {
   margin-top: 10px;
 }
 
-footer {
+.rodape__box {
   background-color: #2c2c2e;
   color: #f8f8ff;
   text-align: center;
@@ -270,7 +354,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-footer .contato {
+.rodape__box .contato {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -284,7 +368,7 @@ footer .contato {
   margin-top: 20px;
   font-weight: bold;
 }
-footer .contato a {
+.rodape__box .contato a {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -292,7 +376,7 @@ footer .contato a {
   text-decoration: none;
   color: #f8f8ff;
 }
-footer .contato li {
+.rodape__box .contato li {
   list-style: none;
 }
 

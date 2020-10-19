@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" type="image/ico" href="./assets/img/favicon.ico"/>
   <script src="./assets/js/script.js"></script>
   <!-- Fonts Google -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -22,33 +23,33 @@
   </Header>
 <!-- boas vindas -->
   <section class="container">
-    <div class="boas-vindas">
+    <div class="container__boasVindas">
       <img src="./assets/img/astron.png" alt="Hugo Codes Desenho de Astronauta">
       <h1>Oi, eu sou o Hugo.</h1>
       <h2>Desenvolvedor Frontend</h2>
     </div>
   </section>
 <!-- sobre mim -->
-  <section class="container sobre-mim">
+  <section class="container sobreMim">
     <div>
       <h2>Sobre Mim</h2>
-      <p>Olá, Meu nome é Hugo e eu sou Desenvolvedor Frontend, apaixonado por tecnologia
-        e design, na busca de uma contínua evolução.
+      <p>Olá, Meu nome é Hugo e eu sou Desenvolvedor Frontend e UI Designer, apaixonado por tecnologia
+        e design, estou semore buscando evoluir e adiquirir novas habilidades. Desafios me motivam. 
       </p>
       <h2>Habilidades:</h2>
-      <ul class="habilidades">
+      <ul class="sobreMim__habilidades">
         <li><img src="./assets/img/html.png" alt="HTML 5" id="html-imagem"></li>
         <li><img src="./assets/img/css.png" alt="CSS 3" id="css-imagem"></li>
         <li><img src="./assets/img/sass.png" alt="Sass" id="sass-imagem"></li>
         <li><img src="./assets/img/js.png" alt="Javascript" id="javascript-imagem"></li>
       </ul>
-      <ul class="habilidades2">
+      <ul class="sobreMim__habilidades2">
         <li><img src="./assets/img/figma-1.svg" alt="Figma" id="html-imagem"></li>
         <li><img src="./assets/img/adobexd.png" alt="AdobeXD" id="css-imagem"></li>
         <li><img src="./assets/img/wordpress.png" alt="WordPress"></li>
       </ul>
       <a class="cursos tooltip">Veja os meus cursos
-        <span class="tooltiptext">
+        <span class="cursos__tooltiptext">
           <ul>
             <li>ADS - Cursando</li>
             <li>Web design completo e UI/UI design - Origamid</li>
@@ -65,20 +66,30 @@
     <div>
       <h2>Portfólio</h2>
       <div>
+        <p class="portfolio__name">Bikecraft - Site Completo</p>
         <img src="./assets/img/site1.jpg" alt="">
-        <a href="./Bikecraft/index.html" id="catalogo" class="catalogo"><p>Visualizar</p></a>
-        <a href="#" id="catalogo" class="repo"><p>ver repositório</p></a>
+        <a href="./Bikecraft/index.html" id="catalogo" class="portfolio__catalogo"><p>Visualizar</p></a>
+        <a href="#" id="catalogo" class="portfolio__repo"><p>ver repositório</p></a>
       </div>
       <div>
+        <p class="portfolio__name">Wildbeast - Somente o CSS Grid Layout</p>
         <img src="./assets/img/site2.jpg" alt="">
-        <a href="./wildbeast/index.html" id="catalogo" class="catalogo"><p>Visualizar</p></a>
-        <a href="#" id="catalogo" class="repo"><p>ver repositório</p></a>
+        <a href="./wildbeast/index.html" id="catalogo" class="portfolio__catalogo"><p>Visualizar</p></a>
+        <a href="#" id="catalogo" class="portfolio__repo"><p>ver repositório</p></a>
       </div>
       <div>
+        <p class="portfolio__name">Jokenpô - Game</p>
         <img src="./assets/img/site3.jpg" alt="">
-        <a href="./jokenpo/index.html" id="catalogo" class="catalogo"><p>Visualizar</p></a>
-        <a href="#" id="catalogo" class="repo"><p>ver repositório</p></a>
+        <a href="./jokenpo/index.html" id="catalogo" class="portfolio__catalogo"><p>Visualizar</p></a>
+        <a href="#" id="catalogo" class="portfolio__repo"><p>ver repositório</p></a>
       </div>
+      <div>
+        <p class="portfolio__name">Este portfólio</p>
+        <img src="./assets/img/site4.jpg" alt="">
+        <a href="#" id="catalogo" class="portfolio__catalogo"><p>Visualizar</p></a>
+        <a href="#" id="catalogo" class="portfolio__repo"><p>ver repositório</p></a>
+      </div>
+      <p class="portfolio__aviso">*Projetos feitos para estudo</p>
       
       
     </a>
@@ -86,7 +97,7 @@
   </section>
 
   <footer>
-    <div class="rodape-box">
+    <div class="rodape__box">
       <p>Herbty Hugo © 2020. Alguns direitos reservados.</p>
       <div class="contato"><ul>
         <li>Whatsapp: (85) 99192-5974</li>
